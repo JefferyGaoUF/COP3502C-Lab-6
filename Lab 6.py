@@ -12,10 +12,16 @@ def encoder(num):       #Jeffery Gao
         encodedNum += str(number)
     return encodedNum
 
-def decoder(num):
-    pass        # your decoder here
-    # Note: the encodedNum var is stored as a string
-
+def decoder(num):   #Matthew Cardenas
+    passw = ''          #decodes input
+    for number in num:
+        val = int(number)
+        if val <= 2:
+            val += 7
+        else:
+            val -= 3
+        passw += str(val)
+    return passw
 
 # Loops the program until quit
 while True:
@@ -37,8 +43,8 @@ while True:
 
 
     if optionChosen == 2:       # decoder
-        pass        # Your decoder program here ^-^
-        # Note: the encodedNum var is stored as a string
+        print(f"The encoded password is {encodedNum}, and the original password is ", end='')
+        print(decoder(encodedNum), end=".\n")
 
 
     if optionChosen == 3:       # quit
