@@ -3,8 +3,8 @@
 # Cop3502c - Lab 6 - Encoder Decoder GitHub
 
 # Program Functions
-def encoder(num):       #encodes input
-    encodedNum = ""
+def encoder(num):       #Jeffery Gao
+    encodedNum = ""          #encodes input
     for x in num:
         number = int(x)+3
         if number >= 10:
